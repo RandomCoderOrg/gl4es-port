@@ -41,6 +41,23 @@ It's better to define the CMake Build type, preferably `RelWithDebInfo`, that de
 
     An Android.mk is provided that should compile with an NDK
 
+*Termux(Inside proot)*
+---
+> Requires packages `gcc`, `build-essentials`, `cmake`, `libx11-dev`
+
+just do `apt install -y gcc build-essentials cmake libx11-dev` 
+
+```bash
+mkdir build; cd build; cmake -S ../../gl4es; make install
+```
+
+Then export libGL.so.1 to `LD_LIBRARY_PATH`
+
+```bash
+export LD_LIBRARY_PATH="/lib/gl4es/libGL.so.1"
+```
+
+
 *iOS*
 ---
 
