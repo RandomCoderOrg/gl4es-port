@@ -43,9 +43,9 @@ It's better to define the CMake Build type, preferably `RelWithDebInfo`, that de
 
 *Termux(Inside proot)*
 ---
-> Requires packages `gcc`, `build-essentials`, `cmake`, `libx11-dev`
+> Requires packages `gcc`, `build-essential`, `cmake`, `libx11-dev`
 
-just do `apt install -y gcc build-essentials cmake libx11-dev` 
+just do `apt install -y gcc build-essential cmake libx11-dev` 
 
 ```bash
 mkdir build; cd build; cmake -S ../../gl4es; make install
